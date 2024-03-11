@@ -1,0 +1,129 @@
+@media (max-width: 550px) {
+    .container{
+        padding: 0;
+    }
+    nav .min-nav{
+        display: none;
+    }
+    nav{
+        width:100%;
+    }
+    nav .container{
+        height: 72px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav .container .logo p{
+        font-size: 20px;
+    }
+    nav .container .logo span{
+        font-size: 5px;
+        letter-spacing: 1px;
+    }
+    nav .container ul{
+        
+    }
+    nav .container ul li{
+        margin: 0 5px;
+    }
+    nav .container ul li a{
+        padding: 3px;
+        font-size: 8px;
+    }
+    nav .container ul i{
+        font-size: 10px;
+    }
+    
+    header .left-header{
+        padding-left: 30px;
+    }
+    header .left-header h1{
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    header .left-header p{
+        font-size: 14px;
+        width: 400px;
+        color: rgba(255, 255, 255, 0.462);
+    }
+    header .left-header .icon{
+        display: flex;
+       justify-content: space-around;
+        align-items: center;
+        
+        
+    }
+    header .left-header .icon i{
+        padding: 20px 22px;
+        font-size: 14px;
+        margin-right: 40px;
+        
+    }
+    header .left-header .icon .about{
+        display: none;
+    }
+   
+    header .right-header{
+        display: none;
+    }
+    .services{
+        flex-direction: column;
+        text-align: center;
+    }
+    .services .left-services h2{
+        font-size: 30px;
+    }
+    .services .left-services h2::after{
+        left: 30%;
+    }
+    .services .left-services{
+        margin-bottom: 50px;
+    }
+    .about-us{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us .left {
+        width: 100%;
+       
+    }
+    .about-us .left h2{
+        font-size: 30px;
+        width: 100px;
+        margin:  0 auto;
+    }
+    .about-us .left img{
+        width: 300px;
+        top: 10%;
+        left: 20%;
+    }
+    .about-us .right{
+        margin-top: 400px;
+        text-align: center;
+    }
+    
+    .about-us .right h2{
+        font-size: 20px;
+        width: 250px;
+        margin: 10px auto;
+    }
+    .about-us .right h2::after{
+        left: 20%;
+    }
+    .about-us .right .text{
+        width: 250px;
+    }
+    .about-us .right .icon{
+        position: relative;
+    }
+    .about-us .right .icon .img{
+        flex-direction: column;
+        
+    }
+    
+    .about-us .right .icon{
+        flex-direction: column;
+    }
+}

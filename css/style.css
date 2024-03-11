@@ -1,0 +1,924 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Rubik", sans-serif;
+}
+.container{
+    padding: 0 100px;
+}
+nav{
+    flex-direction: column;
+   
+    width: 100%;
+    z-index: 1;
+}
+nav .min-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #343333;
+    padding: 8px 10px;
+}
+nav .min-nav p{
+    font-size: 15px;
+    color: white;
+}
+nav .min-nav p span{
+    color: rgba(0, 128, 0, 0.735);
+}
+nav .min-nav a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgba(0, 128, 0, 0.735);
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.954);
+}
+nav .container .logo{
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav .container .logo p{
+    color: rgb(0, 255, 204);
+    font-size: 60px;
+}
+nav .container .logo span{
+    color: white;
+    font-size: 9px;
+    letter-spacing: 3px;
+    
+}
+nav .container ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav .container ul li{
+    margin: 0 20px;
+}
+nav .container ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 10px;
+}
+nav .container ul li a:hover{
+    color: #00ffcc;
+    border-bottom: 1px solid rgb(0, 255, 204);
+}
+nav .container ul i{
+    color: #00ffcc;
+    margin-left: 10px;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient( to right , black 50%, rgba(0, 255, 204, 0.236));
+    color: white;
+    position: relative;
+}
+header .left-header{
+    padding-left: 100px;
+    
+}
+header .left-header span{
+    color: #00ffcc;
+    letter-spacing: 2px;
+}
+header .left-header h1{
+    font-size: 60px;
+    color: white;
+    margin: 20px 0;
+    width: 700px;
+    position: relative;
+}
+header .left-header h1::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: #00ffcc;
+    bottom: -20px;
+    left: 0;
+}
+header .left-header h1 span{
+    color: #00ffcc;
+}
+header .left-header .hr{
+    width: 100px;
+    height: 2px;
+    background-color: #00ffcc;
+}
+header .left-header p{
+    font-size: 15px;
+    color: #343333;
+    margin: 40px 0;
+    width: 500px;
+}
+header .left-header .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .left-header .icon i{
+    background-color: #00ffcc;
+    padding: 30px 32px;
+    border-radius: 50px;
+    box-shadow: 1px 0 10px 1px #00ffcc;
+    border: 5px solid #168f79;
+    outline:4px #0f6959;
+}
+header .left-header .icon .about{
+    margin-left: 30px;
+}
+header .left-header .icon .about p{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: relative;
+}
+header .left-header .icon .about p::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #ffffff17;
+    left: 0;
+    bottom: -20px;
+}
+
+header .left-header .icon .about span{
+    font-size: 16px;
+}
+
+header .right-header img{
+    width: 700px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.services{
+    background-color: black;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .left-services{
+
+}
+.services .left-services span{
+    
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.services .left-services h2{
+    font-size: 50px;
+    word-spacing: 2px;
+    color: white;
+    margin: 20px 0 40px 0;
+    position: relative;
+}
+.services .left-services h2::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #00ffcc;
+    left: 0;
+    bottom: -20px;
+}
+.services .left-services h2 span{
+    color: #00ffcc;
+    margin: 20px 0;
+}
+.services .left-services p{
+    font-size: 15px;
+    color: #343333;
+    width: 400px;
+    margin-bottom: 50px;
+}
+.services .left-services a{
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    background-color: #00ffcc;
+}
+.services .right-services{
+    display: flex;
+    gap: 30px;
+} 
+
+.services .right-services .top div ,
+.services .right-services .bottom div{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #34333335;
+    margin-bottom: 30px;
+}
+.services .right-services .top div h3{
+    margin: 20px 0;
+}
+.services .right-services .top div p{
+    margin: 20px 0;
+}
+.services .right-services .bottom div h3{
+    margin: 15px 0;
+}
+.services .right-services .bottom div p{
+    margin: 15px 0;
+}
+.services .right-services .spchial{
+    background-color: black;
+    background-image: linear-gradient(black , #00ffcc47);
+}
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px 0 100px;
+    background-color:rgba(0, 0, 0, 0.983);
+    position: relative;
+    gap: 60px;
+}
+.about-us .left img{
+    position: absolute;
+    bottom: 0;
+}
+.about-us .right{
+    margin-bottom: 50px;
+}
+.about-us .right span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.about-us .right h2{
+    font-size: 50px;
+    color: white;
+    width: 550px;
+    margin: 30px 0;
+    position: relative;
+}
+.about-us .right h2::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #00ffcc;
+    left: 0;
+    bottom: -20px;
+}
+.about-us .right .text{
+    color: #343333;
+    width: 600px;
+    margin: 50px 0 20px 0;
+}
+.about-us .right .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us .right .icon .img{
+    display: flex;
+    margin-top: 20px;
+}
+.about-us .right .icon .img img{
+    width: 70px;
+}
+.about-us .right .icon .img h3{
+    color: white;
+    margin-left: 10px;
+}
+.about-us .right .icon .img p{
+    color: #343333;
+    width: 300px;
+    margin: 15px 0 0 10px;
+}
+.about-us .right .icon .img .desc{
+    flex-direction: column;
+}
+.number{
+    min-height: 30vh;
+    background-color: black;
+    background-image: linear-gradient( to left , black ,#00ffcc38) ,
+    url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 50px 0;
+}
+.number div{
+    text-align: center;
+}
+.number div img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+.number div p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.number div p span{
+    color: #00ffcc;
+    font-size: 50px;
+}
+.number div h4{
+    color: white;
+}
+.projects{
+    padding: 50px 100px;
+    background-color: black;
+
+}
+.projects .top{
+    display: flex;
+    gap: 10px;
+}
+.projects .top .text{
+
+}
+.projects .top .text span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.projects .top .text h2{
+    font-size: 50px;
+    color: white;
+    margin: 20px 0;
+    position: relative;
+}
+.projects .top .text h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: #00ffcc;
+    left: 5px;
+    bottom: -20px;
+}
+.projects .top .text .after-h2{
+    color: #343333;
+    margin-top: 100px;
+}
+.projects .top .text .desc-project{
+    margin-top: 60px;
+}
+.projects .top .text .desc-project p i{
+    color: #00ffcc;
+    font-size: 20px;
+    padding: 5px;
+}
+.projects .top .text .desc-project p{
+    color: white;
+    margin-bottom: 10px;
+}
+.projects .bottom {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+} 
+.side-view{
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    background-image: linear-gradient( to right , rgba(0, 0, 0, 0.14) , #00ffcc52),
+    url(../images/side-view-portrait-of-a-woman-with-make-up-CTUMAUJ.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 100px;
+}
+.side-view img{
+    filter:grayscale(100%);
+}
+.years{
+    padding: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+}
+.years .left span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+    
+}
+.years .left h2{
+    color: white;
+    font-size: 40px;
+    width: 500px;
+    margin: 20px 0 120px 0;
+}
+.years .left .img{
+    position: relative;
+}
+.years .left .img i{
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 41%;
+    top:50% ;
+    transform: translate(-50% , -50%);
+}
+.years .right{
+    margin-top: 70px;
+}
+.years .right .text{
+    color: #343333;
+    width: 500px;
+    margin: 50px 0;
+}
+.years .right .desc{
+    margin: 20px 0 50px 0;
+}
+.years .right .desc p{
+    color: white;
+    margin-top: 10px;
+}
+.years .right .desc p i{
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #00ffcc;
+    color: white;
+    margin-right: 10px;
+}
+.years .right .img{
+    position: relative;
+}
+.years .right .img i{
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: 42%;
+    top:50% ;
+    transform: translate(-50% , -50%);
+}
+.our-team .team{
+    padding: 100px 0 50px 0;
+    background-color: black;
+    background: linear-gradient(#00ffcc00 , #00ffcc09) ,
+    url(../images/Bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    text-align: center;
+}
+.our-team .team span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.our-team .team h2{
+    font-size: 50px;
+    color: white;
+    margin: 20px 0 ;
+    position: relative;
+}
+.our-team .team h2::after{
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    height: 2px;
+    width: 150px;
+    left: 44%;
+    background-color: #00ffcc;
+}
+.our-team .team p{
+    width: 700px;
+    margin: 0 auto;
+    color: #343333;
+    margin-top: 50px;
+}
+.our-team .my-team{
+    background: linear-gradient(#00ffcc00 ,#00ffcc13) ,
+    url(../images/Bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 50px 0;
+}
+.our-team .my-team .card img{
+    filter: grayscale(100%);
+}
+.our-team .my-team .top{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.our-team .my-team .top .card{
+    background-color: rgba(36, 35, 35, 0.45);
+    display: flex;
+    width: 450px;
+    padding: 30px;
+}
+.our-team .my-team .top .card img{
+    margin-top: -60px;
+    margin-right: 15px;
+}
+.our-team .my-team .top .card  .text h3{
+    color: white;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.our-team .my-team .top .card  .text span{
+    color: #00ffcc;
+   
+}
+.our-team .my-team .top .card  .text p{
+    color: #343333;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.our-team .my-team .top .card  .text .sochial{
+    display: flex;
+    gap: 20px;
+}
+.our-team .my-team .top .card  .text .sochial i{
+    color: #00ffcc;
+}
+.our-team .my-team .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.our-team .my-team .bottom .card{
+     background-color: #24232373;
+    display: flex;
+    width: 450px;
+    padding: 30px;
+    margin-top: 40px;
+}
+.our-team .my-team .bottom .card img{
+    margin-top: -60px;
+    margin-right: 15px;
+}
+
+.our-team .my-team .bottom .card  .text h3{
+    color: white;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.our-team .my-team .bottom .card  .text span{
+    color: #00ffcc;
+   
+}
+.our-team .my-team .bottom .card  .text p{
+    color: #343333;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.our-team .my-team .bottom .card  .text .sochial{
+    display: flex;
+    gap: 20px;
+}
+.our-team .my-team .bottom .card  .text .sochial i{
+    color: #00ffcc;
+}
+.work{
+    padding: 100px;
+    background-color: black;
+    text-align: center;
+}
+.work span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.work h2{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+    position: relative;
+}
+.work h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: #00ffcc;
+    bottom: -10px;
+    left: 43%;
+}
+.work p{
+    color: #343333;
+    margin-top: 50px;
+    width: 700px;
+    margin: 30px auto;
+}
+.work .imgs .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.work .imgs .center{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.work .imgs .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.says{
+    padding: 50px 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.44) ,rgba(0, 0, 0, 0.444)),
+    url(../images/adadad.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.says .left span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.says .left h2{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+    position: relative;
+}
+.says .left h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: #00ffcc;
+    bottom: -20px;
+    left: 0;
+}
+.says .left p{
+    color: #2a2828;
+    width: 600px;
+    margin: 50px 0;
+}
+.says .left a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00ffcc;
+    margin-top: 30px;
+}
+.says .right .card{
+    background-color:#242323c5 ;
+    padding: 30px;
+}
+.says .right .card .text{
+    width: 400px;
+    margin-bottom: 50px;
+}
+.says .right .card .comment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.says .right .card .comment .person{
+    display: flex;
+}
+.says .right .card .comment .person img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.says .right .card .comment .person p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+.says .right .card .comment .person p span{
+    color: #00ffcc;
+    font-size: 13px;
+}
+.says .right .card .comment i{
+    font-size: 30px;
+    color: #00ffcc;
+}
+.news{
+    padding: 100px;
+    background-color: black;
+    text-align: center;
+}
+.news span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+}
+.news h2{
+    font-size: 50px;
+    color: white;
+    margin: 20px 0;
+    position: relative;
+}
+.news h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 150px;
+    left: 43%;
+    bottom: -10px;
+    background-color: #00ffcc;
+}
+.news .text{
+    width: 700px;
+    color: #343333;
+    margin: 50px auto;
+}
+.news  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.news  .cards .card{
+    width: 300px;
+}
+.news  .cards .card h3{
+    color: #00ffcc;
+    width: 300px;
+    margin: 20px 0;
+}
+.news  .cards .card p{
+    color: #343333;
+    margin-bottom: 40px;
+}
+.news  .cards .card .data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news  .cards .card .data p{
+    color: white;
+}
+.news  .cards .card .data p i{
+    color: #00ffcc;
+    margin: 5px;
+    font-size: 18px;
+}
+.form{
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.437) , #00ffcc11),
+    url(../images/world2.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.form label{
+    color: #00ffcc;
+    
+}
+.form  form{
+    border: 2px solid #00ffcc;
+    padding: 20px;
+}
+.form  form input{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #00ffcc;
+    padding: 10px;
+    margin: 20px 0;
+    outline: #00ffb3;
+    color: white;
+}
+.form  form textarea{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #00ffcc;
+    outline: #00ffb3;
+    margin: 20px 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+.form  form input[type="submit"]{
+    background-color: #00ffcc;
+    color: white;
+}
+.form .right span{
+    color: #00ffcc;
+    letter-spacing: 3px;
+
+}
+.form .right h2{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+    position: relative;
+}
+.form .right h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 150px;
+    bottom: -20px;
+    left: 0%;
+    background-color: #00ffcc;
+}
+.form .right p{
+    color: #343333;
+    width: 600px;
+    margin: 50px 0;
+}
+.form .right h3{
+    color: white;
+    margin: 20px 0 10px 0;
+}
+.form .right h3 i{
+    font-size: 30px;
+    color: #00ffcc;
+    padding: 5px;
+}
+.form .right span{
+    margin-left: 40px;
+}
+footer{
+    background-color: black;
+    min-height: 60vh;
+    text-align: center;
+    padding-top: 100px;
+}
+footer h2{
+    color: #00ffcc;
+    font-size: 50px;
+}
+footer span{
+    color: white;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 50px 0;
+}
+footer ul li{
+    margin: 0px 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #00ffcc;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    width: 600px;
+    margin: 20px auto;
+}
+footer .sochial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+footer .sochial i{
+    color: #00ffcc;
+    font-size: 20px;
+    
+}
+footer h4{
+    background-color: rgba(128, 128, 128, 0.108);
+    width: 100%;
+    color: white;
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
