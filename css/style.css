@@ -12,9 +12,8 @@ html{
 }
 nav{
     flex-direction: column;
-   
     width: 100%;
-    z-index: 1;
+    
 }
 nav .min-nav{
     display: flex;
@@ -168,10 +167,11 @@ header .left-header .icon .about span{
 }
 
 header .right-header img{
-    width: 700px;
+    width: 620px;
     position: absolute;
     bottom: 0;
     right: 0;
+    
 }
 .services{
     background-color: black;
@@ -355,9 +355,7 @@ header .right-header img{
     display: flex;
     gap: 10px;
 }
-.projects .top .text{
 
-}
 .projects .top .text span{
     color: #00ffcc;
     letter-spacing: 3px;
@@ -863,7 +861,7 @@ header .right-header img{
     color: #00ffcc;
     padding: 5px;
 }
-.form .right span{
+.form .right .contact{
     margin-left: 40px;
 }
 footer{

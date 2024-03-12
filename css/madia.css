@@ -1,72 +1,481 @@
 @media (max-width: 550px) {
     .container{
-        padding: 0;
+        padding: 15px;
+        flex-direction: column;
     }
-    nav .min-nav{
-        display: none;
-    }
-    nav{
-        width:100%;
+    nav .min-nav a{
+        font-size: 12px;
     }
     nav .container{
-        height: 72px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        height: 80px;
     }
     nav .container .logo p{
         font-size: 20px;
     }
     nav .container .logo span{
-        font-size: 5px;
-        letter-spacing: 1px;
-    }
-    nav .container ul{
-        
+        display: none;
     }
     nav .container ul li{
-        margin: 0 5px;
+        margin:  0 5px;
+        
     }
     nav .container ul li a{
-        padding: 3px;
-        font-size: 8px;
+        padding: 7px 0;
+        font-size: 9px;
     }
     nav .container ul i{
-        font-size: 10px;
+        font-size: 14px;
     }
-    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        
+    }
     header .left-header{
-        padding-left: 30px;
+        padding: 0;
     }
     header .left-header h1{
-        font-size: 18px;
-        margin: 8px 0;
+        font-size: 20px;
+        width: 300px;
+        margin: 30px auto;
     }
-
+    header .left-header h1::after{
+        left: 29%;
+        width: 130px;
+    }
     header .left-header p{
-        font-size: 14px;
-        width: 400px;
-        color: rgba(255, 255, 255, 0.462);
+        margin: 40px auto;
+        color: #8b8585;
+        width: 300px;
+    }
+    header .right-header {
+        display: none;
     }
     header .left-header .icon{
-        display: flex;
-       justify-content: space-around;
-        align-items: center;
-        
-        
-    }
-    header .left-header .icon i{
-        padding: 20px 22px;
-        font-size: 14px;
-        margin-right: 40px;
-        
+        text-align: center;
+        flex-direction: column;
     }
     header .left-header .icon .about{
+        margin-left: 0px;
+    }
+    header .left-header .icon .about p::after{
+        left: 37%;
+        width: 120px;
+    }
+    .services{
+        flex-direction: column;
+        text-align: center;
+    }
+    .services .left-services h2{
+        font-size: 30px;
+    }
+    .services .left-services h2::after{
+        left: 34%;
+        width: 100px;
+    }
+    .services .left-services p{
+        color: #b1aeae;
+        width: 300px;
+    }
+    .services .left-services{
+        margin-bottom: 100px;
+    }
+    .services .right-services {
+        flex-direction: column;
+    }
+    
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us .right h2{
+        font-size: 25px;
+        width: 200px;
+        margin: 30px auto;
+    }
+    .about-us .right h2::after{
         display: none;
     }
+    .about-us .right .text{
+        width: 200px;
+        margin: 50px auto;
+    }
+    .about-us .right h2::after{
+        left: 40%;
+    }
    
-    header .right-header{
+    .about-us .left img{
+        left: 27%;
+        width: 200px;
+    }
+    .about-us .right{
+        margin-bottom: 450px;
+        text-align: center;
+    }
+    .about-us .right .icon{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .about-us .right .icon .img{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        position: relative;
+    }
+    .about-us .right .icon .img img{
+        position: absolute;
+        top: -80px;
+        left: 40%;
+    }
+    .number div img{
+        width: 40px;
+
+    }
+    .number div p{
+        font-size: 16px;
+    }
+    .number div p span{
+        font-size: 18px;
+    }
+    .number div h4{
+        font-size: 9px;
+    }
+    .projects{
+        padding: 50px;
+    }
+    .projects .top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .projects .top .text span{
+        text-align: center;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .projects .top .text h2{
+        font-size: 25px;
+        
+    }
+    .projects .top .text h2::after{
+        width: 80px;
+        left: 35%;
+    }
+    .projects .top .text .after-h2{
+        font-size: 9px;
+        margin-top: 50px;
+    }
+    .projects .top .text .desc-project p i{
+        font-size: 16px;
+    }
+    .projects .top .text .desc-project p{
+        font-size: 7px;
+    }
+    .projects .top img{
+        width: 130px;
+    }
+    .projects .bottom img{
+        width: 100px;
+    }
+    .side-view img{
+        width: 50px;
+    }
+    .years{
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .years .left h2{
+        font-size: 20px;
+        width: 300px;
+        margin: 40px auto;
+    }
+    .years .left img{
+        width: 200px;
+    }
+    .years .right img{
+        width: 200px;
+    }
+    .years .left .img i{
+        font-size: 16px;
+        padding: 15px;
+        top: 45%;
+    }
+    .years .right .img i{
+        font-size: 16px;
+        padding: 15px;
+        top: 45%;
+    }
+    .years .right .text{
+        width: 300px;
+        margin: 50px auto;
+        font-size: 14px;
+    }
+    .years .right .desc p{
+        font-size: 11px;
+    }
+    .years .right .img i{
+        right: 32%;
+    }
+    .years .left .img i{
+        left: 52%;
+    }
+    .years .right .img i{
+        right: 32%;
+    }
+    .our-team .team h2{
+        font-size: 20px;
+    }
+    .our-team .team h2::after{
+        width: 100px;
+        left: 37%;
+    }
+    .our-team .team p{
+        width: 300px;
+        color: #b1aeae;
+        font-size: 14px;
+    }
+    .our-team .my-team {
+        background: black;
+        padding: 70px 30px;
+    }
+    .our-team .my-team .top {
+        flex-direction: column;
+    }
+    .our-team .my-team .bottom {
+        flex-direction: column;
+    }
+    .our-team .my-team .top .card{
+        width: 100%;
+        padding: 15px;
+    }
+    .our-team .my-team .bottom .card{
+        width: 100%;
+        padding: 15px;
+    }
+    .our-team .my-team .top .card img{
+        width: 150px;
+        
+    }
+    .our-team .my-team .bottom .card img{
+        width: 150px;
+        
+    }
+    .our-team .my-team .top .card  .text h3{
+        width: 150px;
+        font-size: 16px;
+    }
+    .our-team .my-team .bottom .card  .text h3{
+        width: 150px;
+        font-size: 16px;
+    }
+    .our-team .my-team .top .card  .text p{
+        color: #343333;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 130px;
+    }
+    .our-team .my-team .bottom .card  .text p{
+        color: #343333;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 130px;
+    }
+    .our-team .my-team .top .card  .text span{
+        font-size: 13px;
+    }
+    .our-team .my-team .bottom .card  .text span{
+        font-size: 13px;
+    }
+    .work{
+        text-align: center;
+    }
+    .work h2{
+        font-size: 30px;
+        width: 200px;
+        margin: 30px auto;
+    }
+    .work h2::after{
+        left: 24%;
+        width: 100px;
+    }
+    .work p{
+        width: 200px;
+        margin: 50px auto;
+    }
+    .work img{
+        width: 100px;
+    }
+    .says{
+        flex-direction: column;
+        text-align: center;
+    }
+    .says .left h2{
+        font-size: 25px;
+    }
+    .says .left h2::after{
+        left: 34%;
+        width: 100px;
+    }
+    .says .left p{
+        color: #b1aeae;
+        width: 300px;
+    }
+    .says .right .card{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .says .right .card .text{
+        width: 250px;
+        color: #b1aeae;
+    }
+    .says .right .card .comment .person p{
+        font-size: 16px;
+    }
+    .says .right .card .comment .person img{
+        width: 50px;
+    }
+    .says .right .card .comment i{
+        font-size: 20px;
+    }
+    .news{
+        padding: 50px;
+    }
+    .news h2{
+        font-size: 25px;
+    }
+    .news h2::after{
+        left: 33%;
+        width: 100px;
+    }
+    .news .text{
+        width: 290px;
+    }
+    .news  .cards{
+        flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+        text-align: center;
+    }
+    .form form{
+        width: 300px;
+    }
+    .form .right{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .form .right h2{
+        font-size: 25px;
+    }
+    .form .right h2::after{
         display: none;
+    }
+    .form .right h2::after{
+        left: 37%;
+    }
+    .form .right{
+        text-align: center;
+    }
+    .form .right p{
+        color: #8b8585;
+        width: 270px;
+        ;
+    }
+    .form .right .contact{
+        margin-left: 0px;
+    }
+    footer{
+        padding-top: 50px;
+
+    }
+    footer h2{
+        font-size: 30px;
+    }
+    footer ul li{
+        margin: 0px 5px;
+    }
+    footer ul li a{
+        text-decoration: none;
+        color: #00ffcc;
+        padding: 3px;
+        font-size: 10px;
+    }
+    footer p{
+    width: 300px;
+    font-size: 14px;
+    }
+    footer h4{
+        height: 200px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+@media (min-width: 551px) and (max-width:767px) {
+    .container{
+        padding: 30px;
+    }
+    nav .min-nav a{
+        font-size: 14px;
+    }
+    nav .container{
+        height: 100px;
+    }
+    nav .container .logo p{
+        font-size: 20px;
+    }
+    nav .container .logo span{
+        display: none;
+    }
+    nav .container ul li{
+        margin:  0 5px;
+    }
+    nav .container ul li a{
+        padding: 5px 0;
+        font-size: 11px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        
+    }
+    header .left-header{
+        padding: 0;
+    }
+    header .left-header h1{
+        font-size: 25px;
+        width: 400px;
+        margin: 30px auto;
+    }
+    header .left-header h1::after{
+        left: 34%;
+        width: 130px;
+    }
+    header .left-header p{
+        margin: 40px auto;
+        color: #8b8585;
+    }
+    header .right-header {
+        display: none;
+    }
+    header .left-header .icon{
+        text-align: center;
+        flex-direction: column;
+    }
+    header .left-header .icon .about{
+        margin-left: 0px;
+    }
+    header .left-header .icon .about p::after{
+        left: 37%;
+        width: 120px;
     }
     .services{
         flex-direction: column;
@@ -78,52 +487,733 @@
     .services .left-services h2::after{
         left: 30%;
     }
+    .services .left-services p{
+        color: #b1aeae;
+        
+    }
     .services .left-services{
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
-    .about-us{
+    .services .right-services {
         flex-direction: column;
-        text-align: center;
-    }
-    .about-us .left {
-        width: 100%;
-       
-    }
-    .about-us .left h2{
-        font-size: 30px;
-        width: 100px;
-        margin:  0 auto;
-    }
-    .about-us .left img{
-        width: 300px;
-        top: 10%;
-        left: 20%;
-    }
-    .about-us .right{
-        margin-top: 400px;
-        text-align: center;
     }
     
+    .about-us{
+        flex-direction: column;
+    }
     .about-us .right h2{
-        font-size: 20px;
-        width: 250px;
-        margin: 10px auto;
+        font-size: 25px;
+        width: 300px;
+        margin: 30px auto;
     }
     .about-us .right h2::after{
-        left: 20%;
+        display: none;
     }
     .about-us .right .text{
-        width: 250px;
+        width: 300px;
+        margin: 50px auto;
+    }
+    .about-us .right h2::after{
+        left: 40%;
+    }
+    .about-us .left img{
+        left: 30%;
+    }
+    .about-us .right{
+        margin-bottom: 450px;
+        text-align: center;
     }
     .about-us .right .icon{
-        position: relative;
+        flex-direction: column;
+        margin-top: 30px;
     }
     .about-us .right .icon .img{
         flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        position: relative;
+    }
+    .about-us .right .icon .img img{
+        position: absolute;
+        top: -80px;
+        left: 40%;
+    }
+    .number div img{
+        width: 50px;
+
+    }
+    .number div p{
+        font-size: 16px;
+    }
+    .number div p span{
+        font-size: 30px;
+    }
+    .number div h4{
+        font-size: 14px;
+    }
+    .projects{
+        padding: 50px;
+    }
+    .projects .top .text h2{
+        font-size: 25px;
+    }
+    .projects .top .text h2::after{
+        width: 80px;
+    }
+    .projects .top .text .after-h2{
+        font-size: 9px;
+        margin-top: 50px;
+    }
+    .projects .top .text .desc-project p{
+        font-size: 7px;
+    }
+    .projects .top img{
+        width: 150px;
+    }
+    .projects .bottom img{
+        width: 140px;
+    }
+    .side-view img{
+        width: 100px;
+    }
+    .years{
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .years .left h2{
+        font-size: 25px;
+        width: 400px;
+        margin: 40px auto;
+    }
+    .years .right .text{
+        width: 400px;
+        margin: 50px auto;
+    }
+    .years .right .desc p{
+        font-size: 14px;
+    }
+    .years .right .img i{
+        right: 32%;
+    }
+    .years .left .img i{
+        left: 52%;
+    }
+    .years .right .img i{
+        right: 32%;
+    }
+    .our-team .team h2{
+        font-size: 25px;
+    }
+    .our-team .team h2::after{
+        left: 37%;
+    }
+    .our-team .team p{
+        width: 400px;
+        color: #b1aeae;
+    }
+    .our-team .my-team {
+        background: black;
+        padding: 70px 30px;
+    }
+    .our-team .my-team .top {
+        flex-direction: column;
+    }
+    .our-team .my-team .bottom {
+        flex-direction: column;
+    }
+    .our-team .my-team .top .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .our-team .my-team .bottom .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .our-team .my-team .top .card img{
+        width: 200px;
         
     }
+    .our-team .my-team .bottom .card img{
+        width: 200px;
+        
+    }
+    .our-team .my-team .top .card  .text h3{
+        width: 150px;
+        font-size: 20px;
+    }
+    .our-team .my-team .bottom .card  .text h3{
+        width: 150px;
+        font-size: 20px;
+    }
+    .our-team .my-team .top .card  .text span{
+        font-size: 16px;
+    }
+    .our-team .my-team .bottom .card  .text span{
+        font-size: 16px;
+    }
+    .work h2{
+        font-size: 30px;
+    }
+    .work h2::after{
+        left: 35%;
+        width: 100px;
+    }
+    .work p{
+        width: 400px;
+        margin: 50px auto;
+    }
+    .work img{
+        width: 150px;
+    }
+    .says{
+        flex-direction: column;
+        text-align: center;
+    }
+    .says .left h2{
+        font-size: 25px;
+    }
+    .says .left h2::after{
+        left: 37%;
+    }
+    .says .left p{
+        color: #b1aeae;
+        width: 400px;
+    }
+    .says .right .card{
+        margin-top: 50px;
+    }
+    .news{
+        padding: 50px;
+    }
+    .news h2{
+        font-size: 25px;
+    }
+    .news h2::after{
+        left: 39%;
+        width: 100px;
+    }
+    .news .text{
+        width: 400px;
+    }
+    .news  .cards{
+        flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form .right{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .form .right h2{
+        font-size: 40px;
+    }
+    .form .right h2::after{
+
+        left: -10%;
+    }
+    .form .right h2::after{
+        left: 37%;
+    }
+    .form .right p{
+        color: #8b8585;
+        width: 400px;
+    }
+    footer{
+        padding-top: 50px;
+
+    }
+    footer h2{
+        font-size: 30px;
+    }
+    footer ul li{
+        margin: 0px 5px;
+    }
+    footer ul li a{
+        text-decoration: none;
+        color: #00ffcc;
+        padding: 5px;
+    }
+    footer p{
+    width: 400px;
     
+    }
+    footer h4{
+        height: 150px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width:991px) {
+    .container{
+        padding: 50px;
+    }
+    nav .min-nav a{
+        font-size: 14px;
+    }
+    nav .container{
+        height: 100px;
+    }
+    nav .container .logo p{
+        font-size: 30px;
+    }
+    nav .container .logo span{
+        font-size: 5px;
+    }
+    nav .container ul li{
+        margin:  0 10px;
+    }
+    nav .container ul li a{
+        padding: 5px;
+        font-size: 14px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    header .left-header{
+        padding: 0;
+    }
+    header .left-header h1{
+        font-size: 40px;
+    }
+    header .left-header h1::after{
+        left: 37%;
+        width: 180px;
+    }
+    header .left-header p{
+        margin: 40px auto;
+    }
+    header .right-header {
+        display: none;
+    }
+    header .left-header .icon{
+        text-align: center;
+        flex-direction: column;
+    }
+    header .left-header .icon .about{
+        margin-left: 0px;
+    }
+    header .left-header .icon .about p::after{
+        left: 37%;
+        width: 120px;
+    }
+    .services{
+        flex-direction: column;
+        text-align: center;
+    }
+    .services .left-services h2::after{
+        left: 30%;
+    }
+    .services .left-services{
+        margin-bottom: 100px;
+    }
+    .about-us{
+        flex-direction: column;
+        
+    }
+    .about-us .right h2{
+        font-size: 40px;
+        width: 500px;
+       margin: 30px auto;
+    }
+    .about-us .right h2::after{
+        left: 36%;
+    }
+    .about-us .right .text{
+        width: 500px;
+        margin: 30px auto;
+    }
+    .about-us .left img{
+        left: 36%;
+    }
+    .about-us .right{
+        margin-bottom: 450px;
+        text-align: center;
+    }
     .about-us .right .icon{
         flex-direction: column;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .about-us .right .icon .img{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        position: relative;
+    }
+    .about-us .right .icon .img img{
+        position: absolute;
+        top: -80px;
+        left: 40%;
+    }
+    .number div img{
+        width: 50px;
+
+    }
+    .number div p{
+        font-size: 16px;
+    }
+    .number div p span{
+        font-size: 30px;
+    }
+    .number div h4{
+        font-size: 14px;
+    }
+    .projects{
+        padding: 50px;
+    }
+    .projects .top .text h2{
+        font-size: 30px;
+    }
+    .projects .top .text h2::after{
+        width: 80px;
+    }
+    .projects .top .text .after-h2{
+        font-size: 13px;
+    }
+    .projects .top .text .desc-project p{
+        font-size: 12px;
+    }
+    .projects .top img{
+        width: 200px;
+    }
+    .projects .bottom img{
+        width: 200px;
+    }
+    .side-view img{
+        width: 100px;
+    }
+    .years{
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .years .left h2{
+        width: 500px;
+        margin: 30px auto;
+    }
+    .years .right .text{
+        width: 500px;
+        margin: 50px auto;
+    }
+    .our-team .team h2{
+        font-size: 40px;
+    }
+    .our-team .team h2::after{
+        left: 40%;
+    }
+    .our-team .team p{
+        width: 500px;
+    }
+    .our-team .my-team {
+        background: black;
+        padding: 70px 100px;
+    }
+    .our-team .my-team .top {
+        flex-direction: column;
+    }
+    .our-team .my-team .bottom {
+        flex-direction: column;
+    }
+    .our-team .my-team .top .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .our-team .my-team .bottom .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .our-team .my-team .top .card img{
+        width: 330px;
+        
+    }
+    .our-team .my-team .bottom .card img{
+        width: 300px;
+        
+    }
+    .our-team .my-team .top .card  .text h3{
+        width: 150px;
+        font-size: 20px;
+    }
+    .our-team .my-team .bottom .card  .text h3{
+        width: 150px;
+        font-size: 20px;
+    }
+    .our-team .my-team .top .card  .text span{
+        font-size: 16px;
+    }
+    .our-team .my-team .bottom .card  .text span{
+        font-size: 16px;
+    }
+    .work h2{
+        font-size: 40px;
+    }
+    .work h2::after{
+        left: 37%;
+    }
+    .work p{
+        width: 500px;
+    }
+    .work img{
+        width: 200px;
+    }
+    .says{
+        flex-direction: column;
+        text-align: center;
+    }
+    .says .left h2{
+        font-size: 40px;
+    }
+    .says .left h2::after{
+        left: 37%;
+    }
+    .says .left p{
+        color: #b1aeae
+    }
+    .says .right .card{
+        margin-top: 50px;
+    }
+    .news{
+        padding: 50px;
+    }
+    .news h2{
+        font-size: 40px;
+    }
+    .news h2::after{
+        left: 41%;
+    }
+    .news  .cards{
+        flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form .right{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .form .right h2{
+        font-size: 40px;
+    }
+    .form .right h2::after{
+        left: 37%;
+    }
+    .form .right p{
+        color: #8b8585;
+        
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width:1240px) {
+    .container{
+         padding:  0 50px;
+    }
+    .services{
+        padding: 50px;
+    }
+    .about-us{
+        padding: 50px 50px 0 50px;
+    }
+    .about-us .right h2{
+    font-size: 35px;
+    width: 400px;
+    
+    }
+    .about-us .right .icon .img img{
+        width: 50px;
+        height: 40px;
+    }
+    .about-us .right .text{
+        width: 400px;
+    }
+    .about-us .right .icon .img p{
+        width: 200px;
+    }
+    .number div img{
+    width: 50px;
+    margin-bottom: 10px;
+    }
+    .number div p{
+        font-size: 16px;
+    }
+    nav .container .logo p{
+        font-size: 40px;
+    }
+    nav .container .logo span{
+        font-size: 5px;
+    }
+    nav .container ul li{
+        margin: 0 10px;
+    }
+    nav .container ul li a{
+        padding: 7px;
+    }
+    header .left-header{
+        margin-top: 200px;
+    }
+    header .left-header h1{
+        font-size: 40px;
+        width: 500px;
+    }
+    header .left-header p{
+        width: 400px;
+    }
+    header .right-header img{
+        width: 500px;
+        height: 700px;
+    }
+    .about-us{
+        display: flex;
+        justify-content: space-around;
+        gap: 380px;
+    }
+    .projects .bottom img{
+        width: 268px;
+    }
+    .projects .top img{
+        width: 280px;
+    }
+    .projects .top .text h2{
+        font-size: 40px;
+    }
+    .projects .top .text .desc-project p{
+        font-size: 13px;
+    }
+    .side-view img{
+        width: 150px;
+    }
+    .years{
+        padding: 50px;
+    }
+    .years .left h2{
+        font-size: 30px;
+        width: 350px;
+    }
+    .years .left .img img{
+        width: 300px;
+    }
+    .years .left .img i{
+        font-size: 18px;
+        padding: 20px;    
+        left: 43%;
+        top:50% ;
+       
+    }
+    .years .right{
+        margin-top: 50px;
+    }
+    .years .right .img img{
+        width: 300px;
+    }
+    .years .right .img i{
+        font-size: 18px;
+        padding: 20px;    
+        right: 45%;
+        top:50% ;
+       
+    }
+    .years .right .text{
+        width: 400px;
+    }
+    .years .right .desc p{
+        width: 400px;
+        font-size: 14px;
+    }
+    .our-team .team h2{
+        font-size: 40px;
+    }
+    .our-team .team h2::after{
+        left: 42%;
+    }
+    .our-team .my-team .top{
+        gap: 15px;
+    }
+    .our-team .my-team .bottom{
+        gap: 15px;
+    }
+    .our-team .my-team .top .card{
+        padding: 20px;
+        width: 400px;
+    }
+    .our-team .my-team .bottom .card{
+        padding: 20px;
+        width: 400px;
+    }
+    .our-team .my-team .top .card img{
+        width: 180px;
+    }
+    .our-team .my-team .bottom .card img{
+        width: 180px;
+    }
+    .our-team .my-team .top .card  .text p{
+        font-size: 14px;
+    }
+    
+    .our-team .my-team .bottom .card  .text p{
+        font-size: 14px;
+    }
+    .work h2{
+        font-size: 40px;
+    }
+    .work h2::after{
+        left: 40%;
+    }
+    .work .imgs img{
+        width: 260px;
+    }
+    .says .right .card{
+        padding: 20px;
+    }
+    .says .left p{
+        width: 400px;
+    }
+    .news h2{
+        font-size: 40px;
+    }
+    .news h2::after{
+        left: 41%;
+    }
+    .news  .cards{
+        gap: 20px;
+    }
+    .news  .cards .card{
+        width: 280px;
+    }
+    .news  .cards .card h3{
+        font-size: 18px;
+        width: 250px;
+        margin: 10px auto;
+    }
+    .news  .cards .card p{
+        font-size: 14px;
+    }
+    .news  .cards .card img{
+        width: 280px;
+    }
+    .news  .cards .card .data{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .form .right p{
+        width: 400px;
+        font-size: 15px;
+    }
+    .form .right h2{
+        font-size: 40px;
+    }
+    .form .right .contact{
+        font-size: 14px;
+        
     }
 }
